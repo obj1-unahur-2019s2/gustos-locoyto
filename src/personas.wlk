@@ -5,7 +5,15 @@ object estefania {
 }
 
 object rosa {
-	method leGusta(objeto) {  }  // completar
+	method leGusta(objeto) {  return objeto.peso().between(0,2000) }  
 }
 
-// agregar luisa y juan
+object luisa {
+	method leGusta(objeto) {  return objeto.material().brilla()}  
+}
+
+object juan {
+	method leGusta(objeto) {  
+		return objeto.peso().between (1200,2000) || not objeto.color().esFuerte() 
+	}
+}
