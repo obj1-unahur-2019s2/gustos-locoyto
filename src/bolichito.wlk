@@ -30,6 +30,6 @@ object bolichito {
 	}
 	
 	method puedeOfrecerleAlgoA(persona) {
-		return persona.legusta(objetoEnMostrador) || persona.legusta(objetoEnVidriera)
+		return persona.leGusta(objetoEnMostrador) || persona.leGusta(objetoEnVidriera)
 	}
 }
