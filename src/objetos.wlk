@@ -3,6 +3,7 @@ object rojo { method esFuerte() { return true } }
 object verde {  method esFuerte() { return true } }  
 object celeste {  method esFuerte() { return false }}  
 object pardo { method esFuerte() { return false } }  
+object naranja { method esFuerte() { return true } }
 
 /* materiales */
 object lino { method brilla() { return false } }
@@ -51,3 +52,28 @@ object placa {
 	method peso(pesoNuevo) { peso = pesoNuevo}
 	}
 
+object arito {
+	method color() { return celeste }  
+	method material() { return cobre }  
+	method peso() { return 1700 }  
+}
+
+object banquito {
+	
+	var color = naranja
+	
+	method color() { return color }  
+	method color(unColor) { color = unColor}
+	method material() { return madera }  
+	method peso() { return 1700 }  
+}
+
+object cajita {
+	
+	var objetoQueContiene 
+	
+	method color() { return rojo }  
+	method material() { return cobre }  
+	method peso() { return 400 + objetoQueContiene.peso() }
+	method objetoQueContiene (unObjeto) { objetoQueContiene = unObjeto}
+}
